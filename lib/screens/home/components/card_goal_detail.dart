@@ -25,7 +25,10 @@ class CartGoalDetail extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Goals'),
+                  Text(
+                    'Goals',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -62,6 +65,7 @@ class CartGoalDetail extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 12.0,
                         color: Palette.primary,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                     SizedBox(width: 12.0),
@@ -70,6 +74,7 @@ class CartGoalDetail extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 12.0,
                         color: Colors.black45,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                     SizedBox(width: 12.0),
@@ -78,6 +83,7 @@ class CartGoalDetail extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 12.0,
                         color: Colors.black45,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                   ],

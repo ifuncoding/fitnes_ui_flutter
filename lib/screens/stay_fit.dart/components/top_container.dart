@@ -58,12 +58,12 @@ class TopContainer extends StatelessWidget {
               Container(
                 height: height * 0.15,
                 child: Text(
-                  'Stay fit',
+                  'Stay Fit',
                   style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 50.0,
-                  ),
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 50.0,
+                      fontFamily: 'Poppins'),
                 ),
               ),
             ],

@@ -1,7 +1,7 @@
 import 'package:fitness_app/config/palette.dart';
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 class CartGoalDetail extends StatelessWidget {
   const CartGoalDetail({
@@ -132,11 +132,11 @@ class CartGoalDetail extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
                                   Text(
-                                    '250',
+                                    '250\'',
                                     style: TextStyle(color: Palette.primary),
                                   ),
                                   Text(
-                                    '/300',
+                                    '/300\'',
                                     style: TextStyle(
                                       color: Colors.black45,
                                       fontSize: 10,

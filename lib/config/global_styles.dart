@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class globalStyle {
   static const text = TextStyle(color: Colors.white, fontSize: 12.0);
 

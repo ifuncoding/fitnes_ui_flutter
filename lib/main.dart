@@ -1,5 +1,6 @@
 import 'package:fitness_app/config/palette.dart';
 import 'package:fitness_app/screens/home/home_screen.dart';
+import 'package:fitness_app/screens/stay_fit.dart/fit_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Palette.primary,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeScreen(),
+      home: FitnessScreen(),
     );
   }
 }

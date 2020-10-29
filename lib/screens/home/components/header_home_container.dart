@@ -16,7 +16,6 @@ class HeaderHomeContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: size.height * 0.38,
-      padding: EdgeInsets.all(20.0),
       decoration: BoxDecoration(
         color: Palette.primary,
         borderRadius: BorderRadius.only(
@@ -26,11 +25,11 @@ class HeaderHomeContainer extends StatelessWidget {
       ),
       child: Column(
         children: [
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(24.0, 12.0, 24.0, 12.0),
+          Flexible(
+            flex: 7,
+            child: Container(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Stack(
                     children: [
@@ -88,31 +87,33 @@ class HeaderHomeContainer extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 25.0),
-          Expanded(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                BuildUnitItem(
-                  h1: h1,
-                  name: 'Weight',
-                  value: '74',
-                  unit: 'kg',
-                ),
-                BuildUnitItem(
-                  h1: h1,
-                  name: 'Height',
-                  value: '5.11',
-                  unit: 'ft',
-                ),
-                BuildUnitItem(
-                  h1: h1,
-                  name: 'Goal',
-                  value: '68',
-                  unit: 'kg',
-                ),
-              ],
+          Flexible(
+            flex: 3,
+            child: Container(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  BuildUnitItem(
+                    h1: h1,
+                    name: 'Weight',
+                    value: '74',
+                    unit: 'kg',
+                  ),
+                  BuildUnitItem(
+                    h1: h1,
+                    name: 'Height',
+                    value: '5.11',
+                    unit: 'ft',
+                  ),
+                  BuildUnitItem(
+                    h1: h1,
+                    name: 'Goal',
+                    value: '68',
+                    unit: 'kg',
+                  ),
+                ],
+              ),
             ),
           )
         ],

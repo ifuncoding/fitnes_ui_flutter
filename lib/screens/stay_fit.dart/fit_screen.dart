@@ -29,19 +29,21 @@ class FitnessScreen extends StatelessWidget {
                     topRight: Radius.circular(36),
                   ),
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(30.0, 35.0, 30.0, 0.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      LabelContainer(),
-                      SizedBox(height: 30.0),
-                      InputBMIForm(),
-                      SizedBox(height: 30.0),
-                      SelectForm(),
-                      SizedBox(height: 30.0),
-                      SelectDayBottom()
-                    ],
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(30.0, 35.0, 30.0, 0.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        LabelContainer(),
+                        SizedBox(height: 30.0),
+                        InputBMIForm(),
+                        SizedBox(height: 30.0),
+                        SelectForm(),
+                        SizedBox(height: 30.0),
+                        SelectDayBottom()
+                      ],
+                    ),
                   ),
                 ),
               ),

@@ -1,12 +1,8 @@
-import 'package:fitness_app/config/global_styles.dart';
-import 'package:fitness_app/config/palette.dart';
 import 'package:fitness_app/screens/home/components/card_goal_detail.dart';
 import 'package:fitness_app/screens/home/components/header_home_container.dart';
 import 'package:fitness_app/screens/home/components/tab_selection.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:percent_indicator/percent_indicator.dart';
 
 class HomeBody extends StatefulWidget {
   static const h1 = TextStyle(

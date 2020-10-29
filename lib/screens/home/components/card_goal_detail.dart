@@ -1,4 +1,5 @@
 import 'package:fitness_app/config/palette.dart';
+import 'package:fitness_app/screens/stay_fit.dart/fit_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -25,18 +26,28 @@ class CartGoalDetail extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text('Goals'),
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Palette.primary,
-                        borderRadius: BorderRadius.circular(16.0)),
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(8.0, 8.0, 20.0, 8.0),
-                      child: Text(
-                        'Change my goals',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 10.0,
-                            fontWeight: FontWeight.w500),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => FitnessScreen(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Palette.primary,
+                          borderRadius: BorderRadius.circular(16.0)),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(8.0, 8.0, 20.0, 8.0),
+                        child: Text(
+                          'Change my goals',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 10.0,
+                              fontWeight: FontWeight.w500),
+                        ),
                       ),
                     ),
                   )

@@ -29,17 +29,29 @@ class TopContainer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                width: 30.0,
-                height: 30.0,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(8.0),
-                ),
-                child: Center(
-                  child: Icon(
-                    Icons.chevron_left,
-                    color: Colors.black,
+              GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: Container(
+                  width: 35.0,
+                  height: 35.0,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8.0),
+                    boxShadow: [
+                      BoxShadow(
+                        offset: Offset(0, 3),
+                        blurRadius: 10,
+                        color: Colors.black.withOpacity(0.2),
+                      )
+                    ],
+                  ),
+                  child: Center(
+                    child: Icon(
+                      Icons.chevron_left,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),

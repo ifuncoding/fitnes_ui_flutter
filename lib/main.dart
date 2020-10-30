@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Palette.scaffold,
         primaryColor: Palette.primary,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        fontFamily: 'Poppins',
       ),
       home: HomeScreen(),
     );

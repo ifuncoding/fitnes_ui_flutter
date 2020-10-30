@@ -15,7 +15,6 @@ class HeaderHomeContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: size.height * 0.38,
       decoration: BoxDecoration(
         color: Palette.primary,
         borderRadius: BorderRadius.only(

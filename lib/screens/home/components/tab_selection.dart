@@ -22,7 +22,6 @@ class TabSelection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        height: size.height * 0.18,
         padding: EdgeInsets.only(left: 12.0, right: 12.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,

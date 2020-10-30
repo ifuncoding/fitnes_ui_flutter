@@ -34,14 +34,23 @@ class _HomeBodyState extends State<HomeBody> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        HeaderHomeContainer(size: size, h1: HomeBody.h1),
-        TabSelection(
-          size: size,
-          listIcon: _listIcon,
-          indexTab: indexTab,
-          setIndex: setIndex,
+        Flexible(
+          flex: 4,
+          child: HeaderHomeContainer(size: size, h1: HomeBody.h1),
         ),
-        CartGoalDetail()
+        Flexible(
+          flex: 2,
+          child: TabSelection(
+            size: size,
+            listIcon: _listIcon,
+            indexTab: indexTab,
+            setIndex: setIndex,
+          ),
+        ),
+        Flexible(
+          flex: 4,
+          child: CartGoalDetail(),
+        )
       ],
     );
   }

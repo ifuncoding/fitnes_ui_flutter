@@ -41,7 +41,8 @@ class FitnessScreen extends StatelessWidget {
                         SizedBox(height: 30.0),
                         SelectForm(),
                         SizedBox(height: 30.0),
-                        SelectDayBottom()
+                        SelectDayBottom(),
+                        SizedBox(height: 12.0),
                       ],
                     ),
                   ),
